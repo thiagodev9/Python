@@ -1,0 +1,1 @@
+#Tipos complexos e type hint (dicionarios vs dataframes vs Tabelas vs excel )
