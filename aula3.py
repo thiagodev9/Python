@@ -110,3 +110,65 @@ meu_carro["cor"] = "Preto"
 print(f"Dicionário após pintar o carro (mudamos a cor): {meu_carro}")
 
 
+# exercicios
+# 1. Crie uma lista de compras com 5 itens diferentes. Use um loop 'for' para imprimir cada item da lista.
+
+lista_de_compras = ["Maçã", "Pão", "Leite", "Café", "Biscoito"]
+
+for item in lista_de_compras:
+    print(item) 
+
+# 2. Crie um dicionário representando um aluno com as chaves: nome, idade e nota. Imprima o nome e a nota do aluno.
+
+aluno = {
+    "nome": "Thiago",
+    "idade": 25,
+    "nota": 10
+}
+
+print(f"Nome: {aluno['nome']}")
+print(f"Nota: {aluno['nota']}")
+
+# 3. Crie uma lista de números inteiros. Use um loop 'while' para imprimir apenas os números pares da lista.            
+
+lista_de_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+while lista_de_numeros:
+    if lista_de_numeros % 2 == 0:
+        print(lista_de_numeros)
+    lista_de_numeros.pop()      
+
+# 4. Crie um programa que peça ao usuário para digitar uma senha. Use um loop 'while' para continuar pedindo a senha até que o usuário digite "1234".
+
+while True:
+    senha = input("Digite a senha: ")
+    if senha == "1234":
+        break
+    print("Senha incorreta")
+
+# 5. Crie um programa que peça ao usuário para digitar uma senha. Use um loop 'while' para continuar pedindo a senha até que o usuário digite "1234".
+
+while True:
+    senha = input("Digite a senha: ")
+    if senha == "1234":
+        break
+    print("Senha incorreta")    
+
+# 6. Crie um programa que peça ao usuário para digitar uma senha. Use um loop 'while' para continuar pedindo a senha até que o usuário digite "1234".
+
+while True:
+    senha = input("Digite a senha: ")
+    if senha == "1234":
+        break
+    print("Senha incorreta")                
+
+
+# 7. Crie um programa que peça ao usuário para digitar uma senha. Use um loop 'while' para continuar pedindo a senha até que o usuário digite "1234".
+
+while True:
+    senha = input("Digite a senha: ")
+    if senha == "1234":
+        break
+    print("Senha incorreta")            
+    
+        

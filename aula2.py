@@ -162,27 +162,36 @@ print("Ano: ", dataseparada[2])
 #isintance(1, tuple) - False
 #isintance(1, dict) - False
 
-#Exercicios
-#Conversor de temperatura
+#Exercicios usando try exception         
+#Conversor de temperatura   
 #Faça um programa que converta temperatura de Celsius para Fahrenheit
 #Fahrenheit = (Celsius * 9/5) + 32
 
-temp_celsius = float(input("Digite a temperatura em Celsius: "))
-temp_fahrenheit = (temp_celsius * 9/5) + 32
-print("A temperatura em Fahrenheit é: ", temp_fahrenheit)
+try:
+    temp_celsius = float(input("Digite a temperatura em Celsius: "))
+    temp_fahrenheit = (temp_celsius * 9/5) + 32
+    print("A temperatura em Fahrenheit é: ", temp_fahrenheit)
+except ValueError:
+    print("Temperatura invalida")
 
+#Exercicios usando try exception 
 #Verificador de palindromo
 #Faça um programa que verifique se uma palavra é um palindromo
 #exemplo: 
 #Digite uma palavra: arara
 #A palavra é um palindromo
 
-palavra = input("Digite uma palavra: ")
-if palavra == palavra[::-1]:
-    print("A palavra é um palindromo")
-else:
-    print("A palavra não é um palindromo")
+try:
+    palavra = input("Digite uma palavra: ")
+    if palavra == palavra[::-1]:
+        print("A palavra é um palindromo")
+    else:
+        print("A palavra não é um palindromo")
+except ValueError:
+    print("Palavra invalida")
 
+
+#Exercicios usando try exception 
 #calculadora simples
 #Faça um programa que calcule a soma, subtração, multiplicação e divisão de dois numeros
 #exemplo: 
@@ -193,24 +202,33 @@ else:
 #Multiplicação: 20
 #Divisão: 5
 
-num1 = int(input("Digite um numero: "))
-num2 = int(input("Digite outro numero: "))
-print("Soma: ", num1 + num2)
-print("Subtração: ", num1 - num2)
-print("Multiplicação: ", num1 * num2)
-print("Divisão: ", num1 / num2)
+try:
+    num1 = int(input("Digite um numero: "))
+    num2 = int(input("Digite outro numero: "))
+    print("Soma: ", num1 + num2)
+    print("Subtração: ", num1 - num2)
+    print("Multiplicação: ", num1 * num2)
+    print("Divisão: ", num1 / num2)
+except ValueError:
+    print("Numero invalido")    
 
+
+#Exercicios usando try exception    
 #Classificador de numeros
 #Faça um programa que classifique um numero como par ou impar
 #exemplo: 
 #Digite um numero: 10
 #O numero é par
 
-numero = int(input("Digite um numero: "))
-if numero % 2 == 0:
-    print("O numero é par")
-else:
-    print("O numero é impar")
+try:
+    numero = int(input("Digite um numero: "))
+    if numero % 2 == 0:
+        print("O numero é par")
+    else:
+        print("O numero é impar")
+except ValueError:
+    print("Numero invalido")
+
 
 #Conversão de tipo com validação
 #Faça um programa que converta uma string para inteiro
